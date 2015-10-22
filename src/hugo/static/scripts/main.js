@@ -1,0 +1,1 @@
+console.log("This is where you'd put any JavaScript that you need to run. Or, you could make some subdirectories in here and put .js files in there too.");

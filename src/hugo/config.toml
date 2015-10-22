@@ -1,0 +1,4 @@
+baseurl = "${htmlBase}/"
+languageCode = "en-us"
+title = "Hugo with Gulp Seed"
+canonifyurls = true

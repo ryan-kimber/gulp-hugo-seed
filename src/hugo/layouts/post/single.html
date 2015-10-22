@@ -1,0 +1,43 @@
+{{ partial "header.html" . }}
+<body>
+{{ partial "navbar.html" . }}
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="well well-sm">
+                    <h3>{{ .Title }}<br> <small>{{ .Description }}</small></h3>
+                    <hr>
+                    {{ if isset .Params "image" }}
+                    <div style="width: 100%; margin: 10px 10px;">
+                        <div style="width: auto; margin: 0 auto;">
+                            <img src="{{ .Params.image }}"  style="border: 1px solid #999999;" />
+                        </div>
+                    </div>
+                    {{ end }}
+                    <hr>
+                    {{ .Content }}
+            </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="well well-sm"> <!-- Post-specific stats -->
+                <h4>{{ .Date.Format "January 2, 2006" }}<br>
+                <small>{{ .WordCount }} words</small></h4>
+                <hr>
+                <strong>Categories</strong>
+                <ul class="list-unstyled">
+                {{ range .Params.categories }}
+                    <li><a href="/categories/{{ . | urlize }}">{{ . }}</a></li>
+                {{ end }}
+                </ul>
+                <hr>
+                <strong>Tags</strong><br>
+                {{ range .Params.tags }}<a class="label label-default" href="/tags/{{ . | urlize }}">{{ . }}</a> {{ end }}
+            </div>
+            {{ partial "menu.html" . }}
+        </div>
+    </div>
+{{ partial "footer.copyright.html" . }}
+</div>
+{{ partial "footer.html" . }}

@@ -1,0 +1,8 @@
+{
+    "config" : {
+        "awsKey" : "<your aws key>",
+        "awsSecret" : "<your aws secret>",
+        "awsBucket" : "<your aws bucket>",
+        "awsRegion" : "us-west-2"
+    }
+}

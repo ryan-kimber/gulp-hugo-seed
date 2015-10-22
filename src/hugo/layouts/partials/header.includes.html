@@ -1,0 +1,8 @@
+
+
+    <!-- head_includes - your place for CSS/JavaScript etc -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" />
+    <!-- The curly brace syntax is calling a Hugo shortcode called safeHtml - this is ensuring our comment doesn't get stripped out by Hugo
+         as we're using this comment in our Gulp build to inject a reference to the compiled, minified main.css -->
+    {{ "<!-- gulp-inject:maincss:css --><!-- endinject -->" | safeHtml }}

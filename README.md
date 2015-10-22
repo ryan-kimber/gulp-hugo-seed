@@ -46,6 +46,12 @@ To get started, you'll need to do the following:
 
 If you'd like to change some of the options, such as the port the local server runs on, or the Google Analytics ID used in the build, or the credentials for deployment to Amazon S3, please copy gulp-config-default.json to gulp-config.json and change or add your values here. The values read from gulp-config.json will be used to extend and override the values in the buildProperties object declared in gulpfile.js
 
-Thanks for Trying It Out
+Thanks for Trying it Out
 ------------------------
+
+If you found this interesting, please also check out some the other projects at: 
+       
+ - [launchcode.io](http://launchcode.io)
+ - [formhero.io](https://formhero.io)
+
 

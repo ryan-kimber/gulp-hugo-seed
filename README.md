@@ -5,11 +5,11 @@ Hugo Gulp Seed
 
 Here's how Hugo is described in it's own [documentation](http://gohugo.io/overview/introduction/): 
 
-   Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. This means that, unlike systems like WordPress, Ghost and Drupal, which run on your web server expensively building a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
+>Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. This means that, unlike systems like WordPress, Ghost and Drupal, which run on your web server expensively building a page every time a visitor requests one, Hugo does the building when you create your content. Since websites are viewed far more often than they are edited, Hugo is optimized for website viewing while providing a great writing experience.
 
-   Sites built with Hugo are extremely fast and very secure. Hugo sites can be hosted anywhere, including Heroku, GoDaddy, DreamHost, GitHub Pages, Google Cloud Storage, Amazon S3 and CloudFront, and work well with CDNs. Hugo sites run without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases.
+>Sites built with Hugo are extremely fast and very secure. Hugo sites can be hosted anywhere, including Heroku, GoDaddy, DreamHost, GitHub Pages, Google Cloud Storage, Amazon S3 and CloudFront, and work well with CDNs. Hugo sites run without dependencies on expensive runtimes like Ruby, Python or PHP and without dependencies on any databases.
 
-  We think of Hugo as the ideal website creation tool. With nearly instant build times and the ability to rebuild whenever a change is made, Hugo provides a very fast feedback loop. This is essential when you are designing websites, but also very useful when creating content.
+>We think of Hugo as the ideal website creation tool. With nearly instant build times and the ability to rebuild whenever a change is made, Hugo provides a very fast feedback loop. This is essential when you are designing websites, but also very useful when creating content.
 
 For the most part, that description is very apt, but, as a software developer that's had a lot of experience with JavaScript, SASS, and frameworks like AngularJS, I've become accustomed to being able to easily script my builds to handle minification, variable replacements, deployments and more. That's where [Gulp.js](http://gulpjs.com/) comes in.
 

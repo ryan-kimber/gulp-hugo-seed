@@ -17,7 +17,7 @@ module.exports = function(gulp, plugins, buildProperties) {
         if(buildProperties.minifyCss)
         {
             console.log("Creating minified main.css...");
-            return thePipe.pipe(plugins.minifyCss())
+            return thePipe.pipe(plugins.cssnano())
             .pipe(plugins.rev())
             .pipe(plugins.size({ showFiles: true }))
             .pipe(gulp.dest(buildProperties.targetDir));
